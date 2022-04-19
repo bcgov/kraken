@@ -16,7 +16,7 @@ spec:
           env:
             # set chaos duration (in sec) as desired
             - name: TOTAL_CHAOS_DURATION
-              value: '30'
+              value: '120'
 
             ## Specify the size as percent of total node capacity Ex: '30'
             ## Note: For consuming memory in mebibytes change the variable to MEMORY_CONSUMPTION_MEBIBYTES
@@ -24,5 +24,5 @@ spec:
               value: '30'
 
             # ENTER THE COMMA SEPARATED TARGET NODES NAME
-            - name: TARGET_NODES
-              value: '<node_name>'
+            - name: NODE_LABEL
+              value: 'node-role.kubernetes.io/worker'

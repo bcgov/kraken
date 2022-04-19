@@ -31,5 +31,5 @@ spec:
               value: '3'
 
              ## enter the comma separated target nodes name
-            - name: TARGET_NODES
-              value: '<node_name>'
+            - name: NODE_LABEL
+              value: 'node-role.kubernetes.io/worker'
